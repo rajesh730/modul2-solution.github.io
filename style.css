@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    text-align: center;
+    margin: 40px;
+    text-transform: capitalize;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+
+.main > div{
+    border: 1px solid black;
+    position: relative;
+    background-color: gray;
+    width: 30%;
+    margin: 15px;
+
+
+}
+
+           /* position of div header */
+
+.main > div >h2{
+    position: absolute;
+    top: 0;
+    right:0;
+    border: 3px solid black;
+}
+
+.main > .child1 >h2{
+    background-color: pink;
+
+}
+
+.main >.child2 >h2{
+    background-color: red;
+    
+}
+
+.main > .child3 >h2{
+    background-color: yellow;
+    
+}
+
+
+                 /* media quary */
+
+                 
+
+
+
+
+
+
+    @media (min-width:768px) and  (max-width:991px)  {
+       
+    
+        .main >div{
+            width: 40%;
+        }
+    
+        div>.child3{
+            width:88%;
+        }
+
+        
+        
+}
+
+@media (max-width:768px){
+    .main{
+        
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+
+    .main >div{
+        width: 80%;
+        margin: 10px auto;
+        
+    }
+   
+}
+
+
+
+
+
+}
